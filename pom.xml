@@ -12,5 +12,6 @@
     <module>rxjava-account-service</module>
     <module>rest-transaction-service</module>
     <module>rest-accountinfo-service</module>
+    <module>java-account-service</module>
   </modules>
 </project>

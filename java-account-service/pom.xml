@@ -8,11 +8,11 @@
 		<artifactId>reactive-examples</artifactId>
 		<version>1.0-SNAPSHOT</version>
 	</parent>
-	<groupId>rest.accountinfo.service</groupId>
-	<artifactId>rest-accountinfo-service</artifactId>
+	<groupId>java.account.service</groupId>
+	<artifactId>java-account-service</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>rest-accountinfo-service</name>
+	<name>java-account-service</name>
 	<properties>
 		<jersey.version>2.13</jersey.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -33,23 +33,33 @@
 			<groupId>org.glassfish.jersey.containers</groupId>
 			<artifactId>jersey-container-servlet-core</artifactId>
 		</dependency>
-		
-        <dependency>
-            <groupId>org.glassfish.jersey.media</groupId>
-            <artifactId>jersey-media-moxy</artifactId>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+			<version>1.2.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-jersey</artifactId>
+			<version>1.2.0.RELEASE</version>
+		</dependency>
+		<dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.8.2</version>
+            <scope>test</scope>
         </dependency>
-		
 	</dependencies>
 	<build>
-		<finalName>accountinfoservice</finalName>
+		<finalName>javaaccountservice</finalName>
 		<plugins>
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>2.5.1</version>
 				<inherited>true</inherited>
 				<configuration>
-					<source>1.7</source>
-					<target>1.7</target>
+					<source>1.8</source>
+					<target>1.8</target>
 				</configuration>
 			</plugin>
 		</plugins>
