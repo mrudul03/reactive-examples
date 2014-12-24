@@ -1,4 +1,4 @@
-package java.account.util;
+package rest.account.util;
 
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;

@@ -1,4 +1,4 @@
-package java.account.model;
+package rest.account.model;
 
 import java.util.List;
 

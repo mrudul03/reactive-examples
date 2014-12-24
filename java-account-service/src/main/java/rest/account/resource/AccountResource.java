@@ -1,12 +1,5 @@
-package java.account.resource;
+package rest.account.resource;
 
-import java.account.model.Account;
-import java.account.model.AccountInfo;
-import java.account.model.AccountInfoCollectionResponse;
-import java.account.model.TransactionCollectionResponse;
-import java.account.service.AccountInfoService;
-import java.account.service.TransactionService;
-import java.account.util.FutureUtil;
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
@@ -15,7 +8,6 @@ import java.util.concurrent.Executors;
 import java.util.function.Function;
 import java.util.stream.Collectors;
 
-import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -24,17 +16,26 @@ import javax.ws.rs.container.AsyncResponse;
 import javax.ws.rs.container.Suspended;
 import javax.ws.rs.core.MediaType;
 
+import rest.account.model.Account;
+import rest.account.model.AccountCollectionResponse;
+import rest.account.model.AccountInfo;
+import rest.account.model.AccountInfoCollectionResponse;
+import rest.account.model.TransactionCollectionResponse;
+import rest.account.service.AccountInfoService;
+import rest.account.service.TransactionService;
+import rest.account.util.FutureUtil;
+
 
 @Path("customers")
 public class AccountResource {
 	
 	private ExecutorService executor = Executors.newFixedThreadPool(20);
 	
-	@Inject
-	private AccountInfoService accountInfoService;
+	//@Inject
+	private AccountInfoService accountInfoService = new AccountInfoService();
 	
-	@Inject
-	private TransactionService transactionService;
+	//@Inject
+	private TransactionService transactionService = new TransactionService();
 
     @GET
     @Path("/{customerNumber}/accounts/{accountNumber}")
@@ -104,8 +105,9 @@ public class AccountResource {
 				}
     			
     		}).collect(Collectors.toList());
-    		
-    		asyncResponse.resume(accounts);
+    		AccountCollectionResponse response = new AccountCollectionResponse();
+    		response.setAccounts(accounts);
+    		asyncResponse.resume(response);
     		
     	}catch(InterruptedException | ExecutionException e){
     		asyncResponse.resume(e);

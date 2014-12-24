@@ -1,4 +1,4 @@
-package java.account.model;
+package rest.account.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

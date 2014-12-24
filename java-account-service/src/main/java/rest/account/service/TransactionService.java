@@ -1,6 +1,5 @@
-package java.account.service;
+package rest.account.service;
 
-import java.account.model.TransactionCollectionResponse;
 import java.util.concurrent.Future;
 
 import javax.annotation.PostConstruct;
@@ -10,13 +9,19 @@ import javax.ws.rs.client.WebTarget;
 
 import org.springframework.stereotype.Service;
 
+import rest.account.model.TransactionCollectionResponse;
+
 @Service
 public class TransactionService {
 	
 	private Client transactionsServiceClient;
 	private WebTarget transactionsServiceTarget;
 	
-	@PostConstruct
+	//@PostConstruct
+	public TransactionService(){
+		initializeRestClients();
+	}
+	
 	public void initializeRestClients() {
 
 		transactionsServiceClient = ClientBuilder.newClient();
@@ -26,6 +31,10 @@ public class TransactionService {
 	}
 	
 	public Future<TransactionCollectionResponse> retrieveTransactions(String accountNumber){
+		if(null == transactionsServiceTarget){
+			System.out.println("Reinitalizing clients");
+			this.initializeRestClients();
+		}
 		Future<TransactionCollectionResponse> response = transactionsServiceTarget
 				.path("/accounts/"+accountNumber+"/transactions").request().async()
 				.get(TransactionCollectionResponse.class);

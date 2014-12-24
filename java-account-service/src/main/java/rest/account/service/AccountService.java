@@ -1,4 +1,4 @@
-package java.account.service;
+package rest.account.service;
 
 public class AccountService {
 	
