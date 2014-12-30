@@ -71,6 +71,7 @@ Message-based
 Responsive
 Resilient/fault-tolerant (Let it crash model)
 Easily Scalable (Scaling across network boundaries)
+
 I also recommend reading below posts, which were used as source for this information
 
 Benjamin Erb’s Diploma Thesis, Concurrent Programming for Scalable Web Architectures and
