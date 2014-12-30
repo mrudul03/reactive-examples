@@ -14,5 +14,6 @@ The composite service is written in different ways.
 
 1. Using RxJava (rxjava-account-service): RxJava is a Java VM implementation of Reactive Extensions: a library for composing asynchronous and event-based programs by using observable sequences. With RxJava instead of pulling data from an structure, data is pushed to it which reacts with an event that are listened by a subscriber and acts accordantly. You can find more information in https://github.com/Netflix/RxJava.
 
-2. Using Java 8 CompletableFuture (java-account-service)
+2. Using Java 8 CompletableFuture (java-account-service): CompletableFuture is a monad and a functor. Both Scala and JavaScript allow registering asynchronous callbacks when future is completed. We don't have to wait and block until it's ready. We can simply say: run this function on a result, when it arrives. Moreover, we can stack such functions, combine multiple futures together, etc.
+
 3. Using Akka Actor
