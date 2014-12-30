@@ -62,16 +62,17 @@ Both Akka and RxJava are awesome libraries to build reactive applications based 
 
 RxJava
 
-Event based
-Responsive
-Resilient/fault-tolerant (Provides variety of operators to recover from errors)
-Scalable (by default Observable is synchronous and requires additional work for asynchronous)
+1. Event based
+2. Responsive
+3. Resilient/fault-tolerant (Provides variety of operators to recover from errors)
+4. Scalable (by default Observable is synchronous and requires additional work for asynchronous)
+
 Akka is Reactive
 
-Message-based
-Responsive
-Resilient/fault-tolerant (Let it crash model)
-Easily Scalable (Scaling across network boundaries)
+1. Message-based
+2. Responsive
+3. Resilient/fault-tolerant (Let it crash model)
+4. Easily Scalable (Scaling across network boundaries)
 
 I also recommend reading below posts, which were used as source for this information
 
