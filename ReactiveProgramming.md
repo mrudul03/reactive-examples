@@ -27,11 +27,15 @@ The actor’s logic, which relies on pattern matching to determine how to handle
 Isolated state — rather than shared state — for storing context between requests.
 Actors can pass messages back and forth, or even pass messages to them selves; an actor can pass a message to it self in order to finish processing a long-running request after it services other messages in its queue first. Actor based concurrency has a huge benefit of scaling across the network boundaries. This makes it easy to design, build and maintain highly scalable applications.
 
-RxJava: RxJava is library for composing asynchronous and event-based programs using observable sequences for the Java VM. Using RxJava, you can represent multiple asynchronous data streams that come from diverse sources, e.g., stock quote, tweets, computer events, web service requests, etc., and subscribe to the event stream using the Observer. A stream produces data at different points in time. An observer is notified whenever data in that stream and does something with it. You can map, filter, and reduce streams—that’s where the “functional” part comes in.
+RxJava: 
+
+RxJava is library for composing asynchronous and event-based programs using observable sequences for the Java VM. Using RxJava, you can represent multiple asynchronous data streams that come from diverse sources, e.g., stock quote, tweets, computer events, web service requests, etc., and subscribe to the event stream using the Observer. A stream produces data at different points in time. An observer is notified whenever data in that stream and does something with it. You can map, filter, and reduce streams—that’s where the “functional” part comes in.
 
 RxJava also adds Functional Programming flavor with operators to query, filter, project, aggregate, compose and perform time-based operations on multiple events.
 
-Akka: Akka is toolkit and runtime for building highly concurrent, distributed, and fault tolerant applications on the JVM. Akka’s approach to handling concurrency is based on the Actor Model.
+Akka: 
+
+Akka is toolkit and runtime for building highly concurrent, distributed, and fault tolerant applications on the JVM. Akka’s approach to handling concurrency is based on the Actor Model.
 
 Actor Model is defined by three traits
 
@@ -72,6 +76,6 @@ Akka is Reactive
 
 I also recommend reading below posts, which were used as source for this information
 
-Benjamin Erb’s Diploma Thesis, Concurrent Programming for Scalable Web Architectures and
-Kevin Webber post, What is Reactive Programming?
-ReacitveX RxJava
+- Benjamin Erb’s Diploma Thesis, Concurrent Programming for Scalable Web Architectures 
+- Kevin Webber post, What is Reactive Programming?
+- ReacitveX RxJava
