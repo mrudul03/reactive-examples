@@ -1,4 +1,4 @@
-package rest.transcation.service;
+package rest.transcation.model;
 
 import java.util.List;
 

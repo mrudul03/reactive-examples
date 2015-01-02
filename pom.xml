@@ -13,5 +13,6 @@
     <module>rest-transaction-service</module>
     <module>rest-accountinfo-service</module>
     <module>java-account-service</module>
+    <module>akka-account-service</module>
   </modules>
 </project>

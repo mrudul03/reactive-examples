@@ -2,7 +2,6 @@ package rest.account.service;
 
 import java.util.concurrent.Future;
 
-import javax.annotation.PostConstruct;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -18,8 +17,6 @@ public class AccountInfoService {
 	private Client accountInfoServiceClient;
 	private WebTarget accountInfoServiceTarget;
 
-	//@PostConstruct
-	
 	public AccountInfoService(){
 		initializeRestClients();
 	}

@@ -1,6 +1,4 @@
-package rest.accountinfo.service;
-
-import java.io.Serializable;
+package akka.account.model;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -8,9 +6,8 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlAccessorType(XmlAccessType.PROPERTY)
 @XmlRootElement
-public class AccountInfo implements Serializable{
+public class AccountInfo {
 	
-	private static final long serialVersionUID = 5823404471587331225L;
 	
 	private String accountNumber;
 	private String nickName;

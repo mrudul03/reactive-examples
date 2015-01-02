@@ -2,7 +2,6 @@ package rest.account.service;
 
 import java.util.concurrent.Future;
 
-import javax.annotation.PostConstruct;
 import javax.ws.rs.client.Client;
 import javax.ws.rs.client.ClientBuilder;
 import javax.ws.rs.client.WebTarget;
@@ -17,7 +16,6 @@ public class TransactionService {
 	private Client transactionsServiceClient;
 	private WebTarget transactionsServiceTarget;
 	
-	//@PostConstruct
 	public TransactionService(){
 		initializeRestClients();
 	}

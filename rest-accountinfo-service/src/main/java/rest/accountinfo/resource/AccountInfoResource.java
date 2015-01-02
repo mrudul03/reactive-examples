@@ -1,4 +1,4 @@
-package rest.accountinfo.service;
+package rest.accountinfo.resource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +8,9 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+
+import rest.accountinfo.model.AccountInfo;
+import rest.accountinfo.model.AccountInfoCollectionResponse;
 
 //@Path("accounts")
 @Path("customers")

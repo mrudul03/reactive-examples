@@ -1,4 +1,4 @@
-package rest.transcation.service;
+package rest.transcation.resource;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -8,6 +8,9 @@ import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
+
+import rest.transcation.model.Transaction;
+import rest.transcation.model.TransactionCollectionResponse;
 
 @Path("accounts")
 public class TranscationResource {

@@ -30,11 +30,7 @@ import rest.account.util.FutureUtil;
 public class AccountResource {
 	
 	private ExecutorService executor = Executors.newFixedThreadPool(20);
-	
-	//@Inject
 	private AccountInfoService accountInfoService = new AccountInfoService();
-	
-	//@Inject
 	private TransactionService transactionService = new TransactionService();
 
     @GET

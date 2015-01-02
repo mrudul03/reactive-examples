@@ -1,4 +1,4 @@
-package rest.transcation.service;
+package akka.account.model;
 
 import java.io.Serializable;
 
