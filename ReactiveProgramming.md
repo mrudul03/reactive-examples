@@ -76,6 +76,6 @@ Akka is Reactive
 
 I also recommend reading below posts, which were used as source for this information
 
-- [Benjamin Erb’s Diploma Thesis, Concurrent Programming for Scalable Web Architectures] (http://berb.github.io/diploma-thesis/original/)
-- [Kevin Webber post, What is Reactive Programming?] (https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.64q50n1pb)
+- Benjamin Erb’s Diploma Thesis, [Concurrent Programming for Scalable Web Architectures] (http://berb.github.io/diploma-thesis/original/)
+- Kevin Webber post, [What is Reactive Programming?] (https://medium.com/reactive-programming/what-is-reactive-programming-bc9fa7f4a7fc#.64q50n1pb)
 - [ReacitveX RxJava] (https://github.com/ReactiveX/RxJava/wiki)
