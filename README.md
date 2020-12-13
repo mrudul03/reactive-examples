@@ -1,4 +1,5 @@
 reactive-examples
+Repo for reactive examples
 =================
 
 This is a simple example. A customer can navigate through all his bank accounts and when they find an account which they want to see more information, they click on the account number, and then a new screen is opened with detailed information of the account and transactions for a given account.
